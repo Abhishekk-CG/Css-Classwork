@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .float-img {
+  float: left;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  width: 500px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.float-img {
+  float: left;
+  width: 150px;
+  margin-right: 10px;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  width: 500px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+  <img src="example.jpg" alt="Sample Image" class="float-img">
+  <p>This is a paragraph of text that wraps around the floated image. It demonstrates how text flows naturally around a floated element.</p>
+  <p class="clear">This paragraph appears below the floated image due to the clear property.</p>
+  <div class="container">
+  <img src="example.jpg" alt="Sample Image" class="float-img">
+  <p>This is a paragraph of text that wraps around the floated image. It demonstrates how text flows naturally around a floated element.</p>
+  <p class="clear">This paragraph appears below the floated image due to the clear property.</p>
+</div>
+</div>
+</body>
+</html>

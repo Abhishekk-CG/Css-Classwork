@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        gap: 170px;
+        background-color: aqua;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .middle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    li{
+    list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .last{
+        display: flex;
+        gap: 20px;
+    }
+    button{
+        color: rgb(9, 7, 7);
+        background-color: rgb(95, 226, 86);
+        border-radius: 5px;
+    }
+    .about{
+        position: relative;
+    }
+    .dropdown{
+        border: 1px solid red;
+        position: absolute;
+        background-color: azure;
+        padding: 10px;
+        width: 100px;
+        display: none;
+    }
+    .about:hover .dropdown{
+        display: block;
+    }
+    .dropdown li{
+        padding: 8px;
+    }
+    .dropdown li:hover{
+        background-color: lightgreen;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://png.pngtree.com/png-clipart/20190520/original/pngtree-vector-web-search-icon-png-image_3783235.jpg" alt="" width="50" height="30">
+        </div>
+        <div class="middle">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="about">About Us</a>
+                <div class="dropdown">
+                    <ul>
+                        <li><a href="#">About company</a></li>
+                        <li><a href="#">About Employee</a></li>
+                        <li><a href="#">About the founder</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+        </div>
+        <div class="last">
+            <button>Login</button>
+            <button>Sign Up</button>
+        </div>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 200px;
+        width: 200px;
+        border: 10px solid red;
+    }
+    .container>img{
+        display: none;
+    }
+    .container:hover>img{
+        display: inline;
+    }
+    .container:hover+img{
+        display: none;
+    }
+    .input:focus {
+        outline: 2px solid blue;
+        background-color: aqua;
+}
+.list li:first-child {
+  font-weight: bold;
+  color: red;
+}
+.blog p:nth-child(3) {
+  color: red;
+}
+.list li::before{
+    content: " →";
+    color: rgb(255, 0, 0);
+}
+</style>
+<body>
+    <div class="container">
+        <img src="shoes.jpg.webp" alt="" height="200" width="200">
+    </div>
+    <img src="shoes.jpg.webp" alt="" height="200" width="200">
+    <input type="text" class="input" placeholder="Enter text">
+    <ul class="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+<article class="blog">
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+  <p>Paragraph 3</p>
+
+  
+</article>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para{
+              width: 100px;
+  height: 100px;
+  background-color: #1abc9c;
+  color: white;
+  padding: 10px;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-delay: 5s;
+        }
+        .transition-duration-example1 {
+  width: 100px;
+  height: 100px;
+  background-color: #e67e22;
+  color: white;
+  padding: 10px;
+  transition-property: width;
+  transition-duration: 1s; /* 1s duration for width transition */
+}
+.transition-duration-example1:hover {
+  width: 150px;
+}
+.transition-timing-example2 {
+  width: 100px;
+  height: 100px;
+  background-color: #8d5524;
+  color: white;
+  padding: 10px;
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Bouncy effect */
+}
+.transition-timing-example2:hover {
+  opacity: 0.3;
+}
+    </style>
+</head>
+
+<body>
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam enim eius nisi hic commodi odio impedit vel
+            eligendi quis expedita dolore voluptatibus minima, omnis, quia nulla soluta, assumenda cum quisquam pariatur
+            eos alias? Saepe, esse obcaecati quisquam aperiam architecto quaerat culpa quibusdam nisi eos dolorem magni
+            molestiae nulla aspernatur, vero placeat, dolorum id a voluptatibus porro quia cupiditate. Voluptatem quasi
+            laborum asperiores hic dolor quaerat atque, adipisci nesciunt veniam nihil perspiciatis tenetur magni
+            consequuntur incidunt quas! Laboriosam, recusandae atque mollitia consequatur provident quia nobis magnam
+            autem architecto ea quod magni ab molestias fugiat, ipsam cupiditate excepturi? Quam culpa iste esse.</p>
+    </div>
+    <div class="transition-duration-example1">Hover for slow width change</div>
+
+
+
+
+
+
+        <div class="transition-timing-example2">Hover for custom bezier opacity change</div>
+</body>
+
+</html>

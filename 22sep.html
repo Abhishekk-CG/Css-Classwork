@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .intro::first-line{
+            font-weight: bold;
+            color: red;
+        }
+        .story::first-letter{
+            font-size: 2em;
+            float: left;
+            margin-right: 5px;
+            color: red;
+        }
+        .text::selection{
+            background: red;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="intro">This is an introductory paragraph with multiple lines of text. It explains the topic in detail.</p>
+        <p class="story">Once upon a time, there was a great adventure.</p>
+        <p class="text">Select this text to see the effect.</p>
+    </div>
+</body>
+</html>

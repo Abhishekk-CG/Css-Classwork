@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            height: 100vh;
+        }
+        .solar system{
+            position: relative;
+
+        }
+        .sun{
+            background-color: rgb(255, 94, 0);
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            box-shadow: 0 0 30px #ff5500;
+        }
+        .orbit{
+            position: absolute;
+            border: 1px dashed rgb(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: spin linear infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="solar system"></div>
+        <div class="sun"></div>
+
+        <div class="orbit"></div>
+        <div class="earth"></div>
+    </div>
+</body>
+</html>

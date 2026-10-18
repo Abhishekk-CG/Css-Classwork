@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container>div>div p{
+            border: 10px solid red;
+            color: green;
+            background-color: red;
+        } */
+        .container div>div+p{
+            border: 10px solid red;
+            color: green;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>First para</p>
+        <p>second para</p>
+        <a href="">first anchor tag</a>
+        <div> 
+            <p>inner para1</p>
+            <h3>heading3</h3>
+            <a href="">second anchor tag</a>
+            <p>inner para2</p>
+            <div>
+                <p>inner2</p>
+            </div>
+            <p>inner para 3</p>
+        </div>
+        <div>
+            <p>second inner para</p>
+        </div>
+    </div>
+    <p>outer most para</p>
+</body>
+</html>

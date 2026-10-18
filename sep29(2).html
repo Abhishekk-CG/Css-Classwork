@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+            z-index: 1000;
+            border: 1px solid red;
+
+        }
+        .logo{
+            width: 4%;
+            height: 100%;
+            justify-content: center;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            font-size: 10px;
+            list-style: none;
+
+        }
+        .info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1px
+        }
+        .search{
+            width: 40%;
+            height: 25px;
+            border-radius: 5px;
+            background-color: #f5f5f6;
+            color: rgb(76, 73, 73);
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-left: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 10px;
+            font-family: sans-serif;
+        }
+        input{
+            width: 86%;
+            height: 25px;
+            background: none;
+            font-size: 10px;
+        }
+        .info{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            padding-right: -20px;
+            font-family: sans-serif;
+        }
+        svg{
+            width: 15px;
+            height: 15px;
+        }
+        sup{
+            color: red;
+            font-size: 7px;
+            font-weight: medium;
+            font-family: sans-serif;
+            margin-left: 2px;
+        }
+        .dropdown{
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            background-color: azure;
+            padding: 0px;
+            width: 705px;
+            height: 300px;
+            display: none;
+            z-index: 1000;
+            border: 1px solid black;
+        }
+        .items{
+            display: flex;
+            flex-direction: row;
+            margin-left: -40px;
+            margin-top: 25px;
+            list-style-type: none;
+            font-family: sans-serif;
+            height: auto;
+            justify-content: center;
+            gap: 5px;
+            
+        }
+        .items div li{
+            /* gap: ; */
+        }
+        .red {
+            display: flex;
+            flex-direction: column;
+            color: red;
+            font-size: 8px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            gap: 10px;
+        }
+        .men{
+            position: relative;
+        }
+        .men:hover .dropdown{
+            display: block;
+        }
+        .men .dropdown li:hover{
+            background-color: white;
+            z-index: 100;
+        } 
+    </style>
+</head>
+<body>
+    <nav class="main">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7ZAiYJGV1WYuZq5mSaauiHTsnzV480FAQEQ6UNh5Synv2t09Sme1kVwk&s=10" alt="" width="40" height="40">
+        </div>
+        <div class="content">
+            <li class="men">
+                <a href="" >MEN</a>
+            <div class="dropdown">
+                <ul class="items">
+                    <div>
+                        <div class="topwear">
+                            <div class="red"><li><a href="" class="red">Topwear</a></li></div>
+                            <li><a href="">Tshirt</a></li>
+                            <li><a href="">Casual shirt</a></li>
+                            <li><a href="">Formal shirts</a></li>
+                            <li><a href="">Sweatshirt</a></li>
+                            <li><a href="">Sweaters</a></li>
+                            <li><a href="">jackets</a></li>
+                            <li><a href="">blazer</a></li>
+                            <li><a href="">suits</a></li>
+                            <li><a href="">Rain jackets</a></li>
+                        </div>
+                        <div class="indian">
+                            <li><a href="" class="red">Kurtas and kurta set</a></li>
+                            <li><a href="">sherwanis</a></li>
+                            <li><a href="">Nehru jackets</a></li>
+                            <li><a href="">Dhotis</a></li>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bottomwear">
+                            <div class="red"><li><a href="" class="red">Bottomwear</a></li></div>
+                            <li><a href="">Jeans</a></li>
+                            <li><a href="">asual wear</a></li>
+                            <li><a href="">Formal trousers</a></li>
+                            <li><a href="">shorts</a></li>
+                            <li><a href="">Trackpants and joggers</a></li>
+                        </div>
+                        <div class="inner">
+                            <div class="red"><li><a href="" class="red">Innerwear & Sleepwear</a></li></div>
+                            <li><a href="">Brief and trunks</a></li>
+                            <li><a href="">Boxers</a></li>
+                            <li><a href="">Vests</a></li>
+                            <li><a href="">sleepwear and loungewear</a></li>
+                            <li><a href="">Thermals</a></li>
+                        </div>
+                        <div class="red">
+                            <li><a href="" class="red">Plus Size</a></li>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="foot">
+                            <div class="red"><li><a href="" class="red">Footwear</a></li></div>
+                            <li><a href="">casual shoes</a></li>
+                            <li><a href="">Formal shoes</a></li>
+                            <li><a href="">Sports shoes</a></li>
+                            <li><a href="">sneakers</a></li>
+                            <li><a href="">sandals and floaters</a></li>
+                            <li><a href="">Flip Flops</a></li>
+                            <li><a href="">socks</a></li>
+                        </div>
+                        <div class="red">
+                            <li><a href="" class="red">Personal Care & Grooming</a></li>
+                            <li><a href="" class="red">Sunglasses and frames</a></li>
+                            <li><a href="" class="red">Watches</a></li>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sports">
+                            <div class="red"><li><a href="" class="red">Sports & Activewear</a></li></div>
+                            <li><a href="">sports shoes</a></li>
+                            <li><a href="">Sports scandles</a></li>
+                            <li><a href="">Active T-shirts</a></li>
+                            <li><a href="">track pants and sports</a></li>
+                            <li><a href="">tracksuits</a></li>
+                            <li><a href="">jackets and sweatshirts</a></li>
+                            <li><a href="">Swimwear</a></li>
+                            <li><a href="">Sports accessories</a></li>
+                        </div>
+                        <div class="gadgets">
+                            <div class="red"><li><a href="" class="red">Gadgets</a></li></div>
+                            <li><a href="">Smart Wearables</a></li>
+                            <li><a href="">Fitness Gadgets</a></li>
+                            <li><a href="">Headphones</a></li>
+                            <li><a href="">Speakers</a></li>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="fashion">
+                            <div class="red"><li><a href="" class="red">Fashion Accessories</a></li></div>
+                            <li><a href="">Wallets</a></li>
+                            <li><a href="">Belts</a></li>
+                            <li><a href="">Perfume and body Mists</a></li>
+                            <li><a href="">Trimmers</a></li>
+                            <li><a href="">Deaodrants</a></li>
+                            <li><a href="">Ties,cuffins and Pockets</a></li>
+                            <li><a href="">Squares</a></li>
+                            <li><a href="">Accessories and gift sets</a></li>
+                            <li><a href="">Caps and Hats</a></li>
+                            <li><a href="">Mufflers, Scarves & gloves</a></li>
+                            <li><a href="">Phone Cases</a></li>
+                            <li><a href="">Rings & Wristwear</a></li>
+                            <li><a href="">Helmets</a></li>
+                        </div>
+                        <div class="red">
+                            <li><a href="" class="red">Bags & Bagpacks</a></li>
+                            <li><a href="" class="red">Luggage & Trolleys</a></li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </li>
+            <li><a href="" >WOMEN</a></li>
+            <li><a href="" >KIDS</a></li>
+            <li><a href="" >HOME</a></li>
+            <li><a href="" >BEAUTY</a></li>
+            <li><a href="" >GENZ</a></li>
+            <li><a href="" >STUDIO</a><sup>NEW</sup></li>
+        </div>
+        <div class="search">
+            <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0392 15.6244C18.2714 14.084 19.0082 12.1301 19.0082 10.0041C19.0082 5.03127 14.9769 1 10.0041 1C5.03127 1 1 5.03127 1 10.0041C1 14.9769 5.03127 19.0082 10.0041 19.0082C12.1301 19.0082 14.084 18.2714 15.6244 17.0392L21.2921 22.707C21.6828 23.0977 22.3163 23.0977 22.707 22.707C23.0977 22.3163 23.0977 21.6828 22.707 21.2921L17.0392 15.6244ZM10.0041 17.0173C6.1308 17.0173 2.99087 13.8774 2.99087 10.0041C2.99087 6.1308 6.1308 2.99087 10.0041 2.99087C13.8774 2.99087 17.0173 6.1308 17.0173 10.0041C17.0173 13.8774 13.8774 17.0173 10.0041 17.0173Z" fill="#0F0F0F"></path> </g></svg>
+            <input type="search" placeholder="Search for products,brands and more" style="border: none; outline: none;">
+        </div>
+        <div class="info">
+            <div>
+                <svg width="15px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>profile_round [#1342]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -2159.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M100.562548,2016.99998 L87.4381713,2016.99998 C86.7317804,2016.99998 86.2101535,2016.30298 86.4765813,2015.66198 C87.7127655,2012.69798 90.6169306,2010.99998 93.9998492,2010.99998 C97.3837885,2010.99998 100.287954,2012.69798 101.524138,2015.66198 C101.790566,2016.30298 101.268939,2016.99998 100.562548,2016.99998 M89.9166645,2004.99998 C89.9166645,2002.79398 91.7489936,2000.99998 93.9998492,2000.99998 C96.2517256,2000.99998 98.0830339,2002.79398 98.0830339,2004.99998 C98.0830339,2007.20598 96.2517256,2008.99998 93.9998492,2008.99998 C91.7489936,2008.99998 89.9166645,2007.20598 89.9166645,2004.99998 M103.955674,2016.63598 C103.213556,2013.27698 100.892265,2010.79798 97.837022,2009.67298 C99.4560048,2008.39598 100.400241,2006.33098 100.053171,2004.06998 C99.6509769,2001.44698 97.4235996,1999.34798 94.7348224,1999.04198 C91.0232075,1998.61898 87.8750721,2001.44898 87.8750721,2004.99998 C87.8750721,2006.88998 88.7692896,2008.57398 90.1636971,2009.67298 C87.1074334,2010.79798 84.7871636,2013.27698 84.044024,2016.63598 C83.7745338,2017.85698 84.7789973,2018.99998 86.0539717,2018.99998 L101.945727,2018.99998 C103.221722,2018.99998 104.226185,2017.85698 103.955674,2016.63598" id="profile_round-[#1342]"> </path> </g> </g> </g> </g></svg>
+                <span>Profile</span>
+            </div>
+            <div>
+                <svg width="64px" height="15px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M9.06,25C7.68,17.3,12.78,10.63,20.73,10c7-.55,10.47,7.93,11.17,9.55a.13.13,0,0,0,.25,0c3.25-8.91,9.17-9.29,11.25-9.5C49,9.45,56.51,13.78,55,23.87c-2.16,14-23.12,29.81-23.12,29.81S11.79,40.05,9.06,25Z"></path></g></svg>
+                <span>Wishlist</span>
+            </div>
+            <div>
+                <svg width="64px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 11V6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6V10.9673M10.4 21H13.6C15.8402 21 16.9603 21 17.816 20.564C18.5686 20.1805 19.1805 19.5686 19.564 18.816C20 17.9603 20 16.8402 20 14.6V12.2C20 11.0799 20 10.5198 19.782 10.092C19.5903 9.71569 19.2843 9.40973 18.908 9.21799C18.4802 9 17.9201 9 16.8 9H7.2C6.0799 9 5.51984 9 5.09202 9.21799C4.71569 9.40973 4.40973 9.71569 4.21799 10.092C4 10.5198 4 11.0799 4 12.2V14.6C4 16.8402 4 17.9603 4.43597 18.816C4.81947 19.5686 5.43139 20.1805 6.18404 20.564C7.03968 21 8.15979 21 10.4 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <span>Bag</span>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

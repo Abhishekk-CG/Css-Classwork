@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position: Relative vs Absolute</title>
+    <style>
+        /* General Setup for styling the page */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            width: 300px;
+            border: 3px dashed #777;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the boxes inside the containers */
+        .box {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .box-1 { background-color: #3498db; } /* Blue */
+        .box-2 { background-color: #e74c3c; } /* Red (The one we will move) */
+        .box-3 { background-color: #2ecc71; } /* Green */
+
+
+        /* =======================================================
+           1. RELATIVE POSITIONING CODE
+           ======================================================= */
+        .relative-box-2 {
+            position: relative;
+            top: 30px;
+            left: 40px;
+        }
+
+
+        /* =======================================================
+           2. ABSOLUTE POSITIONING CODE
+           ======================================================= */
+        /* We make the container relative so the absolute box stays inside it */
+        .absolute-container {
+            position: relative; 
+        }
+
+        .absolute-box-2 {
+            position: absolute;
+            top: 30px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- EXAMPLE 1: RELATIVE POSITIONING -->
+    <div class="container">
+        <h2>1. Position: Relative</h2>
+        <div class="box box-1">Box 1</div>
+        
+        <!-- This box uses relative positioning -->
+        <div class="box box-2 relative-box-2">Box 2</div>
+        
+        <div class="box box-3">Box 3</div>
+    </div>
+
+    <!-- EXAMPLE 2: ABSOLUTE POSITIONING -->
+    <div class="container absolute-container">
+        <h2>2. Position: Absolute</h2>
+        <div class="box box-1">Box 1</div>
+        
+        <!-- This box uses absolute positioning -->
+        <div class="box box-2 absolute-box-2">Box 2</div>
+        
+        <div class="box box-3">Box 3</div>
+    </div>
+
+</body>
+</html>
