@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-areas: 
+            "header body body"
+            "header content footer"
+            "header content futer";
+            border: 1px solid black;
+            height: 90vh;
+            gap: 10px 5px;
+            justify-items: center;
+            align-items: center;
+        }
+        div{
+            border: 1px solid red;
+        }
+        .first{
+            grid-area: header;
+        }
+        .sec{
+            grid-area: body;
+        }
+        .third{
+            grid-area: content;
+        }
+        .fourth{
+            grid-area: footer;
+        }
+        .fifth{
+            grid-area: futer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first">FIRST</div>
+        <div class="sec">SECOND</div>
+        <div class="third">THIRD</div>
+        <div class="fourth">FORTH</div>
+        <div class="fifth">FIFTH</div>
+    </div>
+</body>
+</html>
