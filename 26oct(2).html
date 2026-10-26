@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-areas: 
+            "one one two three"
+            "one one two eight"
+            "one one four four"
+            "five six four four"
+            "five six seven seven";
+            height: 50vh;
+            border: 1px solid black;
+        }
+        div{
+            border: 1px solid red;
+        }
+        .first{
+            grid-area: one;
+        }
+        .second{
+            grid-area: two;
+        }
+        .third{
+            grid-area: three;
+        }
+        .fourth{
+            grid-area: four;
+        }
+        .fifth{
+            grid-area: five;
+        }
+        .sixth{
+            grid-area: six;
+        }
+        .seventh{
+            grid-area: seven;
+        }
+        .eight{
+            grid-area: eight;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
+        <div class="fifth"></div>
+        <div class="sixth"></div>
+        <div class="seventh"></div>
+        <div class="eight"></div>
+    </div>
+</body>
+</html>
