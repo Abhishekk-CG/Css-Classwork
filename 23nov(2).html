@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: #007bff;
+            --button-padding: 10px 20px;
+            --button-font-size: 16px;
+        }
+        .button{
+            background-color: var(--primary-color);
+            padding: var(--button-padding);
+            font-size: var(--button-font-size);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover{
+            --primary-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Click Me</button>
+</body>
+</html>
